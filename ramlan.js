@@ -296,6 +296,7 @@ ${a}➸ Nama :${a}
 ${a}➸ Umur :${a}
 ${a}➸ Askot :${a}
 ${a}➸ Gender :${a}
+${a}➸ Nama sekolah :${a}
 ${a}➸ Udah Punya Doi/Blm :${a}
 ${a}➸ Pap Muka dumlu!${a}
 𝗦𝗮𝘃𝗲 𝗡𝗼𝗺𝗼𝗿 𝗔𝗱𝗺𝗶𝗻
