@@ -1627,6 +1627,45 @@ ${a}❏ ${prefix}hartatahta${a}
 ${a}❏ ${prefix}wetglass${a}
 ${a}❏ ${prefix}stylelogo${a}
 ${a}❏ ${prefix}watercolor${a}
+${a}❏  ${prefix}qrcode
+${a}❏  ${prefix}barcode
+${a}❏  ${prefix}naruto
+${a}❏  ${prefix}breakwall
+${a}❏  ${prefix}matrix
+${a}❏  ${prefix}blueneon
+${a}❏  ${prefix}crosslogo
+${a}❏  ${prefix}flowertext
+${a}❏  ${prefix}wolflogo
+${a}❏  ${prefix}dropwater
+${a}❏  ${prefix}greenneon 
+${a}❏  ${prefix}crosslogo
+${a}❏  ${prefix}slapimage
+${a}❏  ${prefix}phkomen
+${a}❏  ${prefix}emoji
+${a}❏  ${prefix}silktext
+${a}❏  ${prefix}flametext
+${a}❏  ${prefix}retrotext
+${a}❏  ${prefix}lighttext 
+${a}❏  ${prefix}cslogo
+${a}❏  ${prefix}skytext
+${a}❏  ${prefix}pubglogo
+${a}❏  ${prefix}smoketext
+${a}❏  ${prefix}glowtext
+${a}❏  ${prefix}glitchtext
+${a}❏  ${prefix}textlight
+${a}❏  ${prefix}leavestext 
+${a}❏  ${prefix}bplogo
+${a}❏  ${prefix}phlogo
+${a}❏  ${prefix}text3d
+${a}❏  ${prefix}text3dbox
+${a}❏  ${prefix}splaybutton
+${a}❏  ${prefix}gplaybutton
+${a}❏  ${prefix}epep
+${a}❏  ${prefix}sandwrite 
+${a}❏  ${prefix}firework
+${a}❏  ${prefix}watercolor
+${a}❏  ${prefix}snowwrite
+${a}❏  ${prefix}crismes
 
 「 *${botName}* 」`
 					fakestatus(Laner)
