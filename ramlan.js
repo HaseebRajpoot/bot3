@@ -45,21 +45,21 @@ const {
 /*
 SETTINGS
 */
-botName = "GHOST BOT" // NAMA BOT
-ownerName = "X - MrR4M" // NAMA OWNER
+botName = "HASEEB BOT" // NAMA BOT
+ownerName = "Mr-Haseeb" // NAMA OWNER
 vhtear = "APIKEY" // https://vhtear.com
 xteam = "APIKEY" // https://api.xteam.xyz
-prefix = "/" // PREFIX / AWALAN
+prefix = "." // PREFIX / AWALAN
 blocked = []
 limitawal = "50" // LIMIT USER
 memberlimit = "0" // MEMBER LIMIT GROUP
-cr = "*GHOST BOTZ VERIFIED*" // FAKE REPLY
-const ownerNumber = "6285559240360@s.whatsapp.net" // NOMOR OWNER
+cr = "*HASEEB BOT VERIFIED*" // FAKE REPLY
+const ownerNumber = "923057110112@s.whatsapp.net" // NOMOR OWNER
 const vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:3.0\n'
-            + 'FN:X - MrR4M\n' // NAMA OWNER
-            + 'ORG:GHOST BOT;\n' // NAMA BOT
-            + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' // NOMOR OWNER
+            + 'VERSION:4.0\n'
+            + 'FN:Mr-Haseeb\n' // NAMA OWNER
+            + 'ORG:HASEEB BOT;\n' // NAMA BOT
+            + 'TEL;type=CELL;type=VOICE;waid=923057110112:+92 305-7110-112\n' // NOMOR OWNER
             + 'END:VCARD'
 /*
 SETTINGS
@@ -289,19 +289,19 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*WELCOME IN GC ${mdata.subject}*
+				teks = `*WELCOME IN OUR GROUP ${mdata.subject}*
 ___________________________
 ${a}@${num.split('@')[0]} Intro/Dikick!${a}
-${a}➸ Nama :${a}
-${a}➸ Umur :${a}
+${a}➸ Name :${a}
+${a}➸ Umer :${a}
 ${a}➸ Askot :${a}
 ${a}➸ Gender :${a}
-${a}➸ Nama sekolah :${a}
-${a}➸ Udah Punya Doi/Blm :${a}
+${a}➸ School Name :${a}
+${a}➸ Already have Doi/Blm :${a}
 ${a}➸ Pap Muka dumlu!${a}
 𝗦𝗮𝘃𝗲 𝗡𝗼𝗺𝗼𝗿 𝗔𝗱𝗺𝗶𝗻
 ___________________________
-${a}Jangan jadi kutu lomcat sayang!${a}`
+${a}Please read our group role!${a}`
 				let buffer = await getBuffer(ppimg)
 				rmln.sendMessage(mdata.id, buffer, MessageType.image, { caption: teks, contextInfo: { "mentionedJid": [num] } })
 			} else if (anu.action == 'remove') {
@@ -311,8 +311,8 @@ ${a}Jangan jadi kutu lomcat sayang!${a}`
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `SELAMAT TINGGAL @${num.split('@')[0]}👋*
-${a}Jasamu akan saya kubur dalam dalam${a}`
+				teks = `GOOD BYE @${num.split('@')[0]}👋*
+${a}Your services will bury me deep inside${a}`
 				let buffer = await getBuffer(ppimg)
 				rmln.sendMessage(mdata.id, buffer, MessageType.image, { caption: teks, contextInfo: { "mentionedJid": [num] } })
 			}
@@ -565,19 +565,19 @@ ${a}Jasamu akan saya kubur dalam dalam${a}`
 						}, 4000)
 						setTimeout(() => {
 							rmln.updatePresence(from, Presence.composing)
-							reply("Oh iya, jangan lupain aku ya:(")
+							reply("Oh yeah, don't forget me:(")
 						}, 3000)
 						setTimeout(() => {
 							rmln.updatePresence(from, Presence.composing)
-							reply("Baru undang aku lagi:)")
+							reply("just invite me again:)")
 						}, 2000)
 						setTimeout(() => {
 							rmln.updatePresence(from, Presence.composing)
-							reply("Membernya tambahin dulu")
+							reply("Members add first")
 						}, 1000)
 						setTimeout(() => {
 							rmln.updatePresence(from, Presence.composing)
-							reply("Aku pamit ya kak:)")
+							reply("Good bye brother:)")
 						}, 0)
 					}
 				} catch (err) { console.error(err) }
@@ -589,12 +589,12 @@ ${a}Jasamu akan saya kubur dalam dalam${a}`
 
 				if (!isGroup) return
 				if (!isBadWord) return
-				if (isGroupAdmins) return reply('Untung Kau Admin:) Btw Jangan Ngegas Om😘')
+				if (isGroupAdmins) return reply('Untung Kau Admin:) Btw dont be hasty Om😘')
 				rmln.updatePresence(from, Presence.composing)
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(`Woyy ${sender.split("@")[0]} Jangan Ngomong Kasar Ngemtod😡`)
+				reply(`Woyy ${sender.split("@")[0]} Dont be rode to be modern😡`)
 				setTimeout(() => {
-					rmln.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+					rmln.groupRemove(from, [kic]).catch((e) => { reply(`BOT MUST BE ADMIN`) })
 				}, 3000)
 				setTimeout(() => {
 					rmln.updatePresence(from, Presence.composing)
@@ -602,24 +602,24 @@ ${a}Jasamu akan saya kubur dalam dalam${a}`
 				}, 2000)
 				setTimeout(() => {
 					rmln.updatePresence(from, Presence.composing)
-					reply("Siap Siap Di Kick")
+					reply("Ready to Kick")
 				}, 1000)
 				setTimeout(() => {
 					rmln.updatePresence(from, Presence.composing)
-					reply("Lu Udah Ngomong Kasar")
+					reply("Lu Already talking harshly")
 				}, 0)
 			}
 			}
 			if (budy.includes("https://chat.whatsapp.com/")) {
 				if (!isGroup) return
 				if (!isAntiLink) return
-				if (isGroupAdmins) return reply('Atasan grup mah bebas yakan:v')
+				if (isGroupAdmins) return reply('Group bosses are free to kick:v')
 				rmln.updatePresence(from, Presence.composing)
-				if (budy.includes("#izinbos")) return reply("Iya kak jangan spam ya")
+				if (budy.includes("#izinbos")) return reply("dear dont spam")
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(`Woyy ${sender.split("@")[0]} Gak Boleh Share Link`)
+				reply(`Woyy ${sender.split("@")[0]} cannot Share Link`)
 				setTimeout(() => {
-					rmln.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+					rmln.groupRemove(from, [kic]).catch((e) => { reply(`BOT MUST BE ADMIN`) })
 				}, 3000)
 				setTimeout(() => {
 					rmln.updatePresence(from, Presence.composing)
@@ -673,7 +673,7 @@ ${a}❏ Rank : ${role}${a}
 ${a}❏ Level : ${lvl}${a}
 
 *INFO BOT*
-${a}❏ Nama : ${botName}${a}
+${a}❏ Name : ${botName}${a}
 ${a}❏ Owner : ${ownerName}${a}
 ${a}❏ Prefix : 「 ${prefix} 」${a}
 ${a}❏ Total Register : ${_registered.length}${a}
@@ -768,21 +768,6 @@ ${a}❏ Personal Chat : ${totalchat.length - giid.length}${a}
 ${a}❏ Total Chat : ${totalchat.length}${a}
 ${a}❏ Total Block Contact : ${blocked.length}${a}
 
-*THANKS TO*
-${a}❏ Ramlan ID${a}
-${a}❏ MrG3P5${a}
-${a}❏ MrHRTZ${a}
-${a}❏ Nafiz${a}
-${a}❏ Itsmeiky${a}
-${a}❏ DuingZ${a}
-${a}❏ Arga${a}
-${a}❏ Nayla${a}
-${a}❏ Fadhil${a}
-${a}❏ Adiwajshing/baileys${a}
-${a}❏ MhankBarBar${a}
-${a}❏ SlavyanDesu${a}
-${a}❏ Penyedia API${a}
-
 「 *BOT WHATSAPP* 」`
 				rmln.sendMessage(from, ginfo, image, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "mimetype": "image/jpeg",  "caption": cr,  "jpegThumbnail": fs.readFileSync(`./src/image/thumbnail.jpeg`) } } }, caption: inponya })
 				break
@@ -831,7 +816,7 @@ ${a}❏ ${prefix}bikinquote${a}
 							.on('error', function (err) {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
-								costum('[❗] SEDANG DIPROSES', text, tescuk, cr)
+								costum('[❗] BEING PROCESSED', text, tescuk, cr)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -846,7 +831,7 @@ ${a}❏ ${prefix}bikinquote${a}
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : Lan
 						const media = await rmln.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
-						costum('[❗] SEDANG DIPROSES', text, tescuk, cr)
+						costum('[❗] BEING PROCESSED', text, tescuk, cr)
 						await ffmpeg(`./${media}`)
 							.inputFormat(media.split('.')[1])
 							.on('start', function (cmd) {
@@ -856,7 +841,7 @@ ${a}❏ ${prefix}bikinquote${a}
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+								reply(`Failed, when converting ${tipe} to stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -869,7 +854,7 @@ ${a}❏ ${prefix}bikinquote${a}
 							.toFormat('webp')
 							.save(ran)
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker\nDurasi Sticker Video 1-9 Detik`)
+						reply(`Send picture with caption ${prefix}sticker\nDuration Sticker Video 1-9 Sec`)
 					}
 					break
 
@@ -879,7 +864,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
 					if (!q) return reply(`Teksnya mana kak? Contoh : ${prefix}nuliskiri Ramlan baik hati`)
-					reply('「❗」WAIT BRO GUE NULIS DUMLU YAKAN')
+					reply('「❗」WAIT BRO')
 					kir = await getBuffer(`https://api.xteam.xyz/magernulis2?text=${q}&APIKEY=${xteam}`)
 					rmln.sendMessage(from, kir, image, { quoted: Lan, caption: 'Nihh kak' })
 					break
@@ -889,7 +874,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
 					if (!q) return reply(`Teksnya mana kak? Contoh : ${prefix}nuliskanan Ramlan baik hati`)
-					reply('「❗」WAIT BRO GUE NULIS DUMLU YAKAN')
+					reply('「❗」WAIT BRO')
 					kan = await getBuffer(`https://api.xteam.xyz/magernulis3?text=${q}&APIKEY=${xteam}`)
 					rmln.sendMessage(from, kan, image, { quoted: Lan, caption: 'Nihh kak' })
 					break
@@ -900,11 +885,11 @@ ${a}❏ ${prefix}bikinquote${a}
 					await limitAdd(sender)
 					if (!q) return reply(`Masukan username!\nContoh :\n${prefix}stalkig iamramlan_`)
 					anu = await fetchJson(`https://api.xteam.xyz/dl/igstalk?nama=${q}&APIKEY=${xteam}`)
-					reply('「❗」Sabar Lagi Stalking IG nya kak')
+					reply('「❗」Patient again Stalking IG her brother')
 					stig = await getBuffer(anu.result.user.hd_profile_pic_url_info.url)
 					abu = anu.result.user
 					hasil = `YAHAHA TELAH DI STALK BOS KU UNTUK USERNAME ${q}
-◯ Nama : ${abu.full_name}
+◯ Name : ${abu.full_name}
 ◯ Followers : ${abu.follower_count}
 ◯ Following : ${abu.following_count}
 ◯ Jumlah Post : ${abu.media_count}
@@ -917,14 +902,14 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return rmln.sendMessage(from, `Kode bahasanya mana kak? contoh : ${prefix}tts id Halo Ramlan`, text, { quoted: Lan })
+					if (args.length < 1) return rmln.sendMessage(from, `Where is the language code? Example : ${prefix}tts id Hello Haseeb`, text, { quoted: Lan })
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return rmln.sendMessage(from, `Teksnya mana kak | contoh : ${prefix}tts id ah yamate kudasai`, text, { quoted: Lan })
+					if (args.length < 2) return rmln.sendMessage(from, `Where is the text bro | Example : ${prefix}tts id Please wait`, text, { quoted: Lan })
 					var bby = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					bby.length > 300
-						? reply('Teks nya terlalu panjang kak')
+						? reply('Text is too long')
 						: gtts.save(ranm, bby, function () {
 							exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 								fs.unlinkSync(ranm)
@@ -941,7 +926,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}ttp BOT`)
+					if (!q) return reply(`Where is the text?\nExample :\n${prefix}ttp BOT`)
 					pngttp = './temp/ttp.png'
 					webpng = './temp/ttp.webp'
 					fetch(`https://api.areltiyan.site/sticker_maker?text=${q}`, { method: 'GET' })
@@ -964,7 +949,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp BOT`)
+					if (!q) return reply(`Where is the text?\nExample :\n${prefix}attp BOT`)
 					atetepe = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(q)}`)
 					rmln.sendMessage(from, atetepe, sticker, { quoted: Lan })
 					break
@@ -973,7 +958,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (!q) return reply(`Mau Ngapain?\nContoh :\n${prefix}simi halo`)
+					if (!q) return reply(`What do you want to do?\nExample :\n${prefix}simi hello`)
 					anu = await fetchJson(`https://api.xteam.xyz/simsimi?kata=halo&APIKEY=${xteam}`)
 					reply(anu.jawaban)
 					break
@@ -1047,21 +1032,21 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antilink 1`)
+					if (args.length < 1) return reply(`to activate type : ${prefix}antilink 1`)
 					if (Number(args[0]) === 1) {
 						if (isBadWord) return reply('Sudah Aktif Kak')
 						badword.push(from)
 						fs.writeFileSync('./database/badword.json', JSON.stringify(badword))
-						reply('「 SUKSES 」Fitur Anti Badword Diaktifkan')
-						rmln.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti Badword\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+						reply('「 SUCCESS 」Anti Badword feature Enabled')
+						rmln.sendMessage(from, `ALLERT!!! Group hase been installed anti Badword\nif you break then i will kick you`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isBadWord) return reply('Sudah Mati Kak')
 						var ini = antilink.indexOf(from)
 						badword.splice(ini, 1)
 						fs.writeFileSync('./database/badword.json', JSON.stringify(badword))
-						reply('「 SUKSES 」Fitur Anti Badword Dimatikan')
+						reply('「 SUCCESS 」Anti Badword feature disable')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk mematikan')
+						reply('1 Activate, 0 Deactivate')
 					}
 					break
 
@@ -1070,19 +1055,19 @@ ${a}❏ ${prefix}mining${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}welcome 1`)
+					if (args.length < 1) return reply(`o activate type : ${prefix}welcome 1`)
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('Sudah Aktif Kak')
+						if (isWelkom) return reply('Already activated')
 						welkom.push(from)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
-						reply('「 SUKSES 」Fitur Welcome Diaktifkan')
+						reply('「 SUCCESS 」Feature Welcome Activate')
 					} else if (Number(args[0]) === 0) {
-						if (!isWelkom) return reply('Sudah Mati Kak')
+						if (!isWelkom) return reply('Its dead bro')
 						welkom.splice(from, 1)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
-						reply('「 SUKSES 」Fitur Welcome Dimatikan')
+						reply('「 SUCCESS 」Feature Welcome Deactivate')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk mematikan')
+						reply('1 Activate, 0 Deactivate')
 					}
 					break
 
@@ -1093,16 +1078,16 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}leveling 1`)
 					if (Number(args[0]) === 1) {
-						if (isLevelingOn) return reply('Sudah Aktif Kak')
+						if (isLevelingOn) return reply('Already active bro')
 						_leveling.push(from)
 						fs.writeFileSync('./database/leveling.json', JSON.stringify(_leveling))
-						reply('「 SUKSES 」Fitur Level Diaktifkan')
+						reply('「 SUCCESS 」Feature Level Activate')
 					} else if (Number(args[0]) === 0) {
 						_leveling.splice(from, 1)
 						fs.writeFileSync('./database/leveling.json', JSON.stringify(_leveling))
-						reply('「 SUKSES 」Fitur Level Dimatikan')
+						reply('「 SUCCESS 」Feature Level Deactivate')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk mematikan')
+						reply('1 Activate, 0 Deactivate')
 					}
 					break
 
@@ -1114,19 +1099,19 @@ ${a}❏ ${prefix}mining${a}
 					if (!isBotGroupAdmins) return reply(nad.badmin())
 					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antilink 1`)
 					if (Number(args[0]) === 1) {
-						if (isAntiLink) return reply('Sudah Aktif Kak')
+						if (isAntiLink) return reply('Already active')
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('「 SUKSES 」Fitur Anti Link Diaktifkan')
+						reply('「 SUCCESS 」Feature Anti Link Activate')
 						rmln.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
 					} else if (Number(args[0]) === 0) {
-						if (!isAntiLink) return reply('Sudah Mati Kak')
+						if (!isAntiLink) return reply('Its dead')
 						var ini = antilink.indexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('「 SUKSES 」Fitur Anti Link Dimatikan')
+						reply('「 SUCCESS 」Feature Anti Link Deactivate')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk mematikan')
+						reply('1 Activate, 0 Deactivate')
 					}
 					break
 
@@ -1137,11 +1122,11 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (args.length < 1) return reply(`untuk membuka : ${prefix}group buka\nuntuk menutup : ${prefix}group tutup`)
-					if (args[0] === 'buka') {
+					if (args.length < 1) return reply(`Open : ${prefix}group open\nTo close : ${prefix}group close`)
+					if (args[0] === 'open') {
 						reply(`Berhasil Membuka group`)
 						rmln.groupSettingChange(from, GroupSettingChange.messageSend, false)
-					} else if (args[0] === 'tutup') {
+					} else if (args[0] === 'close') {
 						reply(`Berhasil Menutup Group`)
 						rmln.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
@@ -1167,14 +1152,14 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (args.length < 1) return reply('Yang mau di add siapa?')
-					if (args[0].startsWith('08')) return reply('Gunakan kode bahasa kak')
+					if (args.length < 1) return reply('Who do you want to add?')
+					if (args[0].startsWith('08')) return reply('use the language code')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						rmln.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('Anjim yang mau di add di private, dahlah :)')
+						reply('Who wants to added in private mode :)')
 					}
 					break
 
@@ -1254,7 +1239,7 @@ ${a}❏ ${prefix}mining${a}
 					const userXp = getLevelingXp(sender)
 					if (userLevel === undefined && userXp === undefined) return reply(nad.lvlnul())
 					const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
-					resul = `┏━━━━━━♡ *LEVEL* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : wa.me/${sender.split("@")[0]}\n┃│➸ XP : ${userXp}/${requiredXp}\n┃│➸ LEVEL : ${userLevel}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
+					resul = `┏━━━━━━♡ *LEVEL* ♡━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMe : ${pushname}\n┃│➸ NUMBER : wa.me/${sender.split("@")[0]}\n┃│➸ XP : ${userXp}/${requiredXp}\n┃│➸ LEVEL : ${userLevel}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
 					rmln.sendMessage(from, resul, text, { quoted: Lan })
 						.catch(async (err) => {
 							console.error(err)
@@ -1297,7 +1282,7 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
 					rmln.groupUpdateSubject(from, `${body.slice(9)}`)
-					rmln.sendMessage(from, '「 SUKSES 」Mengubah Nama Grup', text, { quoted: Lan })
+					rmln.sendMessage(from, '「 SUCCESS 」Change group name', text, { quoted: Lan })
 					break
 
 				case 'setdesc':
@@ -1306,7 +1291,7 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
 					rmln.groupUpdateDescription(from, `${body.slice(9)}`)
-					rmln.sendMessage(from, '*「 SUKSES 」Mengubah Desk Grup', text, { quoted: Lan })
+					rmln.sendMessage(from, '*「 SUCCESS 」Change the gropu desk', text, { quoted: Lan })
 					break
 
 				case 'demote':
@@ -1315,7 +1300,7 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('𝗧𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗶𝗻𝗴𝗶𝗻 𝗱𝗶 𝘁𝗲𝗻𝗱𝗮𝗻𝗴!')
+					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('𝗧𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁!')
 					mentioned = Lan.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						dem = ''
@@ -1326,7 +1311,7 @@ ${a}❏ ${prefix}mining${a}
 						mentions(dem, mentioned, true)
 						rmln.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Yahh @${mentioned[0].split('@')[0]} Jabatan kamu sebagai leluhur di grup telah di copot🏃`, mentioned, true)
+						mentions(`Yahh @${mentioned[0].split('@')[0]} Your position  as an Admin in this group hase been removed🏃`, mentioned, true)
 						rmln.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -1337,7 +1322,7 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('Tag Orang Nya Kak')
+					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('Tag target')
 					mentioned = Lan.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						prom = ''
@@ -1348,7 +1333,7 @@ ${a}❏ ${prefix}mining${a}
 						mentions(prom, mentioned, true)
 						rmln.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Selamat🥳 @${mentioned[0].split('@')[0]} *anda naik menjadi admin group* >_<`, mentioned, true)
+						mentions(`Congratulation🥳 @${mentioned[0].split('@')[0]} *you rose to become the admin of the group* >_<`, mentioned, true)
 						rmln.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -1358,7 +1343,7 @@ ${a}❏ ${prefix}mining${a}
 					if (!isGroup) return reply(nad.groupo())
 					if (!isGroupAdmins) return reply(nad.admin())
 					if (!isBotGroupAdmins) return reply(nad.badmin())
-					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('Tag Orang Nya Kak')
+					if (Lan.message.extendedTextMessage === undefined || Lan.message.extendedTextMessage === null) return reply('Tag target')
 					mentioned = Lan.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						heds = 'Bismillah Hedsot >_< :\n'
@@ -1438,16 +1423,16 @@ ${a}❏ ${prefix}mining${a}
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
 					if (!isGroup) return reply(nad.groupo())
-					if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan sama owner ${ownerName}`)
+					if (!isEventon) return reply(`maaf ${pushname} event mining is disable by owner ${ownerName}`)
 					if (isOwner) {
 						const one = 999999999
 						addLevelingXp(sender, one)
 						addLevelingLevel(sender, 99)
-						reply(`karena ${ownerName} baik Bot memberikan ${one}Xp >_<`)
+						reply(`Because ${ownerName} Bot give ${one}Xp >_<`)
 					} else {
 						const mining = Math.ceil(Math.random() * 10000)
 						addLevelingXp(sender, mining)
-						await reply(`*selamat* ${pushname} kamu mendapatkan *${mining}Xp*`)
+						await reply(`*Congratulation* ${pushname} you get *${mining}Xp*`)
 					}
 					break
 
@@ -1469,13 +1454,13 @@ ${a}❏ ${prefix}joox${a}
 					break
 
 				case 'play':
-					if (!q) return reply(`Yang mau di download apaan?\nContoh : ${prefix}play DJ TUMANEDANG`)
+					if (!q) return reply(`What do you want top download?\nExample : ${prefix}play DJ TUMANEDANG`)
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					fakestatus('Lagu Sedang Dicari...')
+					fakestatus('Searching...')
 					anu = await fetchJson(`https://api.xteam.xyz/dl/play?lagu=${q}&APIKEY=${xteam}`)
-					infomp3 = `*「❗」Lagu Ditemukan「❗」*
+					infomp3 = `*「❗」Song found「❗」*
 ➸ Judul : ${anu.judul}
 ➸ Size : ${anu.size}
 ➸ Source : ${anu.source}
@@ -1492,11 +1477,11 @@ ${a}❏ ${prefix}joox${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply('Link Nya Mana Kak')
-					if (!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Link Nya Tidak Valid Kak')
+					if (args.length < 1) return reply('send link')
+					if (!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Link is Invalid')
 					reply(nad.wait())
 					anu = await fetchJson(`https://api.xteam.xyz/dl/ytmp3?url=${q}&APIKEY=${xteam}`)
-					ingfomp3 = `*「❗」Lagu Ditemukan「❗」*
+					ingfomp3 = `*「❗」Song Found「❗」*
 ➸ Judul : ${anu.judul}
 ➸ Size : ${anu.size}
 
@@ -1511,11 +1496,11 @@ ${a}❏ ${prefix}joox${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (args.length < 1) return reply('Link Nya Mana Kak')
-					if (!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Link Nya Tidak Valid Kak')
+					if (args.length < 1) return reply('Send link)
+					if (!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Link is invalid')
 					anu = await fetchJson(`https://api.xteam.xyz/dl/ytmp4?url=${q}&APIKEY=${xteam}`)
 					reply(nad.wait())
-					infomp4 = `*「❗」Video Ditemukan「❗」*
+					infomp4 = `*「❗」Video Found「❗」*
 ➸ Judul : ${anu.judul}
 ➸ Size : ${anu.size}
 
@@ -1531,7 +1516,7 @@ ${a}❏ ${prefix}joox${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply('Link Nya Mana Kak')
+					if (args.length < 1) return reply('Send link')
 					anu = await fetchJson(`https://api.xteam.xyz/dl/tiktok?url=${q}&APIKEY=${xteam}`)
 					reply('[WAIT] Video akan segera dikirim...')
 					tik = await getBuffer(anu.server_1)
@@ -1542,7 +1527,7 @@ ${a}❏ ${prefix}joox${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply('Link Nya Mana Kak')
+					if (args.length < 1) return reply('Send link')
 					anu = await fetchJson(`https://api.xteam.xyz/dl/ig?url=${q}&APIKEY=${xteam}`)
 					reply(nad.wait())
 					buff = await getBuffer(anu.result.data[0].data)
@@ -1564,11 +1549,11 @@ ${a}❏ ${prefix}joox${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Mau Nyari Apaan?\nContoh :\n${prefix}joox sayang`)
+					if (args.length < 1) return reply(`What to find fuck?\nExample :\n${prefix}joox sayang`)
 					reply(nad.wait())
 					anu = await fetchJson(`https://api.xteam.xyz/dl/jooxdl?lagu=${q}&APIKEY=${xteam}`)
 					asu = anu.result
-					infojoox = `*「❗」Lagu Ditemukan「❗」*
+					infojoox = `*「❗」Song Found「❗」*
 ➸ Judul : ${asu.songname}
 ➸ Size : ${asu.filesize}
 ➸ Artis : ${asu.singers}
@@ -1677,7 +1662,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}comictext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}comictext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/comic_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1687,7 +1672,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}hekerlogo Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}hekerlogo Haseeb`)
 					reply(`[🗿] Buset Hemker`)
 					vhbuff = await getBuffer(`https://api.vhtear.com/hacker_avatar?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1700,7 +1685,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(10)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}graffiti Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text  missing?\nExample :\n${prefix}graffiti Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/cool_wall_graffiti?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1710,7 +1695,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}glowtext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}glowtext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/glow_metallic?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1720,7 +1705,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}covertext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}covertext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/cover_banner?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1730,7 +1715,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}narutotext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}narutotext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/naruto_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1740,7 +1725,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}erodedtext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}erodedtext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/eroded_metal?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1750,7 +1735,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}walltext Ramlan`)
+					if (args.length < 1) return reply(`Texty missing?\nExample :\n${prefix}walltext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/the_wall?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1760,7 +1745,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}vietteltext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}vietteltext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/viettel_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1770,7 +1755,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}wingstext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}wingstext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/wings_galaxy?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1780,7 +1765,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}halloween Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}halloween Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/halloween_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1793,7 +1778,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(11)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}graffiti2 Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}graffiti2 Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/girl_graffiti?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1803,7 +1788,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}graffiti3 Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}graffiti3 Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/cartoon_graffiti?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1813,7 +1798,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}foiltext Ramlan`)
+					if (args.length < 1) return reply(`Text misising?\nExample :\n${prefix}foiltext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/foil_text?text=VHTEAR&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1823,7 +1808,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}bloodtext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}bloodtext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/blood_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1833,7 +1818,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}hekertext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}hekertext Haseeb`)
 					reply(`[😎] Heker AbiZzz`)
 					vhbuff = await getBuffer(`https://api.vhtear.com/matrix_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1843,7 +1828,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}bokehtext Ramlan`)
+					if (args.length < 1) return reply(`Text misssing?\nExample :\n${prefix}bokehtext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/bokeh_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1853,7 +1838,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}carbontext Ramlan`)
+					if (args.length < 1) return reply(`Text misssing?\nExample :\n${prefix}carbontext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/carbon_text?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1866,7 +1851,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(14)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}avengerstext Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}avengerstext Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/avengers_text?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1876,7 +1861,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}watertext Ramlan`)
+					if (args.length < 1) return reply(`Text Misssing?\nExample :\n${prefix}watertext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/water_maker?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1886,7 +1871,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}firetext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}firetext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/fire_maker?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1896,7 +1881,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}metaltext Ramlan`)
+					if (args.length < 1) return reply(`Text Misssing?\nExample :\n${prefix}metaltext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/metal_maker?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1909,7 +1894,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(12)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}ballontext Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}ballontext Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/balloonmaker?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1922,7 +1907,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(12)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}gemboktext 11 01 2021 & Ramlan dan Nadia`)
+					if (args.length < 1) return reply(`Text misssing?\nExample :\n${prefix}gemboktext 11 01 2021 & Hasseb and alisha`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/padlock?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1935,7 +1920,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(10)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}bannerff Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}bannerff Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/bannerff?title=${ve}&text=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1945,7 +1930,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}aloklogo Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}aloklogo Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/logoff?hero=alok&text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1955,7 +1940,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}miyalogo Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}miyalogo Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/logoml?hero=miya&text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1965,7 +1950,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}gamelogo Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}gamelogo Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/gamelogo?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1975,7 +1960,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}blackpink Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}blackpink Haseeb`)
 					reply(`[😱] Hah Blekping :v`)
 					vhbuff = await getBuffer(`https://api.vhtear.com/blackpinkicon?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1985,7 +1970,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}thundername Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}thundername Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/thundertext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -1995,7 +1980,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}silktext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}silktext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/silktext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2005,7 +1990,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}partytext Ramlan`)
+					if (args.length < 1) return reply(`Text Missing?\nExample :\n${prefix}partytext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/partytext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2015,7 +2000,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}romancetext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}romancetext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/romancetext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2029,7 +2014,7 @@ ${a}❏  ${prefix}crismes
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
 					var ga = gh.split("&")[2];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}googletext Ramlan & Ramlan Gans & Ramlan Baik`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}googletext Haseeb & Hasseb Gans & Haseeb Baik`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/googletext?text1=${ve}&text2=${za}&text3=${ga}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2039,7 +2024,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}glowtext2 Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}glowtext2 Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/glowtext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2049,7 +2034,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}lovemessage Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}lovemessage Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2062,7 +2047,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(12)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}glitchtext Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}glitchtext Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/glitchtext?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2072,7 +2057,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}galaxytext Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}galaxytext Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/galaxytext?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2085,7 +2070,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(9)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}pornhub Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}pornhub Ramlan & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/pornlogo?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2095,8 +2080,8 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}hartatahta Ramlan`)
-					reply(`[❗] Hirti Tihti Tai Anjg :v`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}hartatahta Haseeb`)
+					reply(`[❗] Open :v`)
 					vhbuff = await getBuffer(`https://api.vhtear.com/hartatahta?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
 					break
@@ -2105,7 +2090,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}wetglass Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}wetglass Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/wetglass?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2115,7 +2100,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}stylelogo Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}stylelogo Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/stylelogo?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2125,7 +2110,7 @@ ${a}❏  ${prefix}crismes
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}watercolor Ramlan`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}watercolor Haseeb`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/watercolor?text=${q}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2138,7 +2123,7 @@ ${a}❏  ${prefix}crismes
 					var gh = body.slice(10)
 					var ve = gh.split("&")[0];
 					var za = gh.split("&")[1];
-					if (args.length < 1) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}wolflogo Ramlan & Gamteng`)
+					if (args.length < 1) return reply(`Text missing?\nExample :\n${prefix}wolflogo Haseeb & Gamteng`)
 					reply(nad.wait())
 					vhbuff = await getBuffer(`https://api.vhtear.com/avatarwolf?text1=${ve}&text2=${za}&apikey=${vhtear}`)
 					rmln.sendMessage(from, vhbuff, image, { quoted: Lan })
@@ -2185,7 +2170,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiharam botwea`)
+					if (!q) return reply(`Text missing?\nContoh :\n${prefix}sertiharam botwea`)
                     reply(nad.wait())
                     menghayu = await getBuffer(`http://onlydevcity.xyz/AnakHaramSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, menghayu, image, { quoted: Lan })
@@ -2195,7 +2180,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertibabu botwea`)
+					if (!q) return reply(`Text Missing?\nExample :\n${prefix}sertibabu botwea`)
                     reply(nad.wait())
                     sertibab = await getBuffer(`http://onlydevcity.xyz/BabuSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertibab, image, { quoted: Lan })
@@ -2205,7 +2190,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertibucin botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertibucin botwea`)
                     reply(nad.wait())
                     sertibuci = await getBuffer(`http://onlydevcity.xyz/BucinSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertibuci, image, { quoted: Lan })
@@ -2215,7 +2200,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertibocilff botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertibocilff botwea`)
                     reply(nad.wait())
                     sertibocilf = await getBuffer(`http://onlydevcity.xyz/CilEpepSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertibocilf, image, { quoted: Lan })
@@ -2225,7 +2210,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertigay botwea`)
+					if (!q) return reply(`Text Missing?\nExample :\n${prefix}sertigay botwea`)
                     reply(nad.wait())
                     sertiga = await getBuffer(`http://onlydevcity.xyz/GaySerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertiga, image, { quoted: Lan })
@@ -2235,7 +2220,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertipacar botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertipacar botwea`)
                     reply(nad.wait())
                     sertipaca = await getBuffer(`http://onlydevcity.xyz/PacarSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertipaca, image, { quoted: Lan })
@@ -2245,7 +2230,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertisadboy botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertisadboy botwea`)
                     reply(nad.wait())
                     sertisadbo = await getBuffer(`http://onlydevcity.xyz/SadBoySerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertisadbo, image, { quoted: Lan })
@@ -2255,7 +2240,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertisurga botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertisurga botwea`)
                     reply(nad.wait())
                     sertisurg = await getBuffer(`http://onlydevcity.xyz/SurgaSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertisurg, image, { quoted: Lan })
@@ -2265,7 +2250,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertipinter botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertipinter botwea`)
                     reply(nad.wait())
                     sertipinte = await getBuffer(`http://onlydevcity.xyz/PintarSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertipinte, image, { quoted: Lan })
@@ -2275,7 +2260,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertibadboy botwea`)
+					if (!q) return reply(`Text Missing?\nExample :\n${prefix}sertibadboy botwea`)
                     reply(nad.wait())
                     sertibadbo = await getBuffer(`http://onlydevcity.xyz/BadBoySerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertibadbo, image, { quoted: Lan })
@@ -2285,7 +2270,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertibadgirl botwea`)
+					if (!q) return reply(`Text Missing?\nExample :\n${prefix}sertibadgirl botwea`)
                     reply(nad.wait())
                     sertibadgir = await getBuffer(`http://onlydevcity.xyz/BadGirlSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertibadgir, image, { quoted: Lan })
@@ -2295,7 +2280,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertigoodgirl botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertigoodgirl botwea`)
                     reply(nad.wait())
                     sertigoodgir = await getBuffer(`http://onlydevcity.xyz/GoodGirlSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertigoodgir, image, { quoted: Lan })
@@ -2305,7 +2290,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertigoodboy botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertigoodboy botwea`)
                     reply(nad.wait())
                     sertigoodbo = await getBuffer(`http://onlydevcity.xyz/GoodBoySerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertigoodbo, image, { quoted: Lan })
@@ -2315,7 +2300,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertieditor botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertieditor botwea`)
                     reply(nad.wait())
                     sertiedito = await getBuffer(`http://onlydevcity.xyz/EditorBerkelasSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertiedito, image, { quoted: Lan })
@@ -2325,7 +2310,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertigudluking botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertigudluking botwea`)
                     reply(nad.wait())
                     sertigudlukin = await getBuffer(`http://onlydevcity.xyz/GoodLookingSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertigudlukin, image, { quoted: Lan })
@@ -2335,7 +2320,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertipakboy botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertipakboy botwea`)
                     reply(nad.wait())
                     sertipakbo = await getBuffer(`http://onlydevcity.xyz/FucekBoySerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertipakbo, image, { quoted: Lan })
@@ -2345,7 +2330,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertijamet botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertijamet botwea`)
                     reply(nad.wait())
                     sertijame = await getBuffer(`http://onlydevcity.xyz/JametSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertijame, image, { quoted: Lan })
@@ -2355,7 +2340,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiyutub botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiyutub botwea`)
                     reply(nad.wait())
                     sertiyutu = await getBuffer(`http://onlydevcity.xyz/YoutuberSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertiyutu, image, { quoted: Lan })
@@ -2365,7 +2350,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiheker botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiheker botwea`)
                     reply(nad.wait())
                     sertiheke = await getBuffer(`http://onlydevcity.xyz/HekerSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertiheke, image, { quoted: Lan })
@@ -2375,7 +2360,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiff1 botwea`)
+					if (!q) return reply(`Text Missing?\nExample :\n${prefix}sertiff1 botwea`)
                     reply(nad.wait())
                     sertiff = await getBuffer(`http://onlydevcity.xyz/FFSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertiff, image, { quoted: Lan })
@@ -2385,7 +2370,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiff2 botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiff2 botwea`)
                     reply(nad.wait())
                     sertif = await getBuffer(`http://onlydevcity.xyz/FFSerti2/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertif, image, { quoted: Lan })
@@ -2395,7 +2380,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiff3 botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiff3 botwea`)
                     reply(nad.wait())
                     sertifa = await getBuffer(`http://onlydevcity.xyz/FFSerti3/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertifa, image, { quoted: Lan })
@@ -2405,7 +2390,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiff4 botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiff4 botwea`)
                     reply(nad.wait())
                     sertifb = await getBuffer(`http://onlydevcity.xyz/FFSerti4/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertifb, image, { quoted: Lan })
@@ -2415,7 +2400,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiff5 botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiff5 botwea`)
                     reply(nad.wait())
                     sertifc = await getBuffer(`http://onlydevcity.xyz/FFSerti5/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertifc, image, { quoted: Lan })
@@ -2425,7 +2410,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertipubg1 botwea`)
+					if (!q) return reply(`Text misssing?\nExample :\n${prefix}sertipubg1 botwea`)
                     reply(nad.wait())
                     sertipubg = await getBuffer(`http://onlydevcity.xyz/PubgTourSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertipubg, image, { quoted: Lan })
@@ -2435,7 +2420,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertipubg2 botwea`)
+					if (!q) return reply(`Text misssing?\nExample :\n${prefix}sertipubg2 botwea`)
                     reply(nad.wait())
                     sertipub = await getBuffer(`http://onlydevcity.xyz/PubgTourSerti2/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertipub, image, { quoted: Lan })
@@ -2445,7 +2430,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}sertiml botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiml botwea`)
                     reply(nad.wait())
                     sertim = await getBuffer(`http://onlydevcity.xyz/MLTourSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, sertim, image, { quoted: Lan })
@@ -2821,14 +2806,14 @@ ${a}❏ ${prefix}premiumlist${a}
 					if (!q.includes('|')) return reply(nad.wrongf())
 					const tujuan = q.substring(0, q.indexOf('|') - 1)
 					const jumblah = q.substring(q.lastIndexOf('|') + 1)
-					if (checkATMuser(sender) < jumblah) return reply(`uang mu tidak mencukupi untuk melakukan transfer`)
+					if (checkATMuser(sender) < jumblah) return reply(`you dont have enough money to make the transfer`)
 					const tujuantf = `${tujuan.replace("@", '')}@s.whatsapp.net`
 					fee = 0.005 * jumblah
 					hasiltf = jumblah - fee
 					addKoinUser(tujuantf, hasiltf)
 					confirmATM(sender, jumblah)
 					addKoinUser(`${ownerNumber}`, fee)
-					reply(`*「 SUKSES 」*\n\npengiriman uang berhasil\n➸ dari : +${sender.split("@")[0]}\n➸ ke : +${tujuan}\n➸ jumlah transfer : ${jumblah}\n➸ pajak : ${fee}`)
+					reply(`*「 SUCCESS 」*\n\nMoney transfar was successful\n➸ dari : +${sender.split("@")[0]}\n➸ ke : +${tujuan}\n➸ jumlah transfer : ${jumblah}\n➸ pajak : ${fee}`)
 					break
 
 				case 'atm':
@@ -2844,11 +2829,11 @@ ${a}❏ ${prefix}premiumlist${a}
 					payout = body.slice(10)
 					const koinPerlimit = 1000
 					const total = koinPerlimit * payout
-					if (checkATMuser(sender) <= total) return reply(`maaf kak uang nya gak cukup, kumpulin uang nya dumlu >_< jangan open bo kak:v`)
+					if (checkATMuser(sender) <= total) return reply(`Sorry the money is not enough, collect the money first >_< Dont open :v`)
 					if (checkATMuser(sender) >= total) {
 						confirmATM(sender, total)
 						bayarLimit(sender, payout)
-						await reply(`*「 PEMBAYARAN BERHASIL 」*\n\n➸ pengirim : Ramlan ID\n➸ penerima : ${pushname}\n➸ nominal pembelian : ${payout} \n➸ harga limit : ${koinPerlimit}/limit\n➸ sisa uang : ${checkATMuser(sender)}\n\nproses berhasil dengan SN\n${createSerial(15)}`)
+						await reply(`*「 SUCCESSFULL PAYMENT 」*\n\n➸ Sender : Haseeb ID\n➸ penerima : ${pushname}\n➸ normal price : ${payout} \n➸ Price limit : ${koinPerlimit}/limit\n➸ sisa uang : ${checkATMuser(sender)}\n\nsuccessfully process with SN\n${createSerial(15)}`)
 					}
 					break
 				case 'toolsmenu':
@@ -2880,14 +2865,14 @@ ${a}❏ ${prefix}bass${a}
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
 					rmln.updatePresence(from, Presence.composing)
-					if (!isQuotedVideo) return reply('Reply Video Nya Kak')
+					if (!isQuotedVideo) return reply('Reply Video Nya Like')
 					reply(nad.wait())
 					encmedia = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					media = await rmln.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Gagal Kak Coba Ulangi:)')
+						if (err) return reply('try again:)')
 						mhee = fs.readFileSync(ran)
 						rmln.sendMessage(from, mhee, audio, { mimetype: 'audio/mp4', quoted: Lan })
 						fs.unlinkSync(ran)
@@ -3175,22 +3160,22 @@ ${a}❏ ${prefix}next${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (isGroup) return reply('Maaf Kak Tidak Bisa Di Group')
+					if (isGroup) return reply('Sorry cannot be in group')
 					anug = getRegisteredRandomId(_registered).replace('@s.whatsapp.net', '')
-					await reply('Mencari Pasangan >_<')
+					await reply('Looking for a partner >_<')
 					await reply(`wa.me/${anug}`)
-					await reply(`Pasangan Ditemukan :\n*${prefix}next* — Temukan Pasangan Baru`)
+					await reply(`Pair found :\n*${prefix}next* — Find a new match`)
 					break
 
 				case 'next':
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (isGroup) return reply('Maaf Kak Tidak Bisa Di Group')
+					if (isGroup) return reply('Sorry cannot be in group')
 					anug = getRegisteredRandomId(_registered).replace('@s.whatsapp.net', '')
-					await reply('Mencari Pasangan >_<')
+					await reply('Looking for a partner >_<')
 					await reply(`wa.me/${anug}`)
-					await reply(`Pasangan Ditemukan :\n*${prefix}next* — Temukan Pasangan Baru`)
+					await reply(`Pair found :\n*${prefix}next* — find a new match`)
 					break
 					
 				case 'othermenu':
@@ -3215,7 +3200,7 @@ ${a}❏ ${prefix}spamsms${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (args[0].startsWith('08')) return reply('Gunakan kode bahasa kak')
+					if (args[0].startsWith('08')) return reply('Use the language code')
 					await fetchJson(`https://api.xteam.xyz/spammer/pizzahut?no=${q}&APIKEY=${xteam}`)
 					await fetchJson(`https://api.xteam.xyz/spammer/olx?no=${q}&APIKEY=${xteam}`)
 					await fetchJson(`https://api.xteam.xyz/spammer/jagreward?no=${q}&APIKEY=${xteam}`)
@@ -3389,15 +3374,15 @@ ${a}❏ ${prefix}sound7${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (!isQuotedSticker) return reply('Reply stickernya kak -_-')
+					if (!isQuotedSticker) return reply('Reply sticker -_-')
 					stiklan = body.slice(11)
-					if (!stiklan) return reply('Namain Stickernya kak!')
+					if (!stiklan) return reply('Name Sticker!')
 					adds = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					lan = await rmln.downloadMediaMessage(adds)
 					setimker.push(`${stiklan}`)
 					fs.writeFileSync(`./media/sticker/${stiklan}.webp`, lan)
 					fs.writeFileSync(`./media/stik.json`, JSON.stringify(setimker))
-					await reply('Sticker Berhasil Ditambahkan Ke Database Bot')
+					await reply('Sticker addded in bot Database')
 					break
 
 				case 'getstiker':
@@ -3405,7 +3390,7 @@ ${a}❏ ${prefix}sound7${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Nama Stiker Nya Apa kak?\nKalo Gak Tau Ketik :\n${prefix}liststiker`)
+					if (args.length < 1) return reply(`Name Stiker?\nif you dont know type :\n${prefix}liststiker`)
 					stikeram = body.slice(11)
 					hasilya = fs.readFileSync(`./media/sticker/${stikeram}.webp`)
 					rmln.sendMessage(from, hasilya, sticker, { quoted: Lan })
@@ -3427,15 +3412,15 @@ ${a}❏ ${prefix}sound7${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (!isQuotedVideo) return reply('Reply Videonya Kak')
+					if (!isQuotedVideo) return reply('Reply Video')
 					adv = body.slice(10)
-					if (!adv) return reply('Namain video nya kak')
+					if (!adv) return reply('Name video')
 					deo = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					dvi = await rmln.downloadMediaMessage(deo)
 					vidioya.push(`${adv}`)
 					fs.writeFileSync(`./media/video/${adv}.mp4`, dvi)
 					fs.writeFileSync(`./media/video.json`, JSON.stringify(vidioya))
-					rmln.sendMessage(from, `Video Berhasil Ditambahkan Ke Database Bot`, MessageType.text, { quoted: Lan })
+					rmln.sendMessage(from, `Video Added in Bot Database`, MessageType.text, { quoted: Lan })
 					break
 
 				case 'getvideo':
@@ -3443,7 +3428,7 @@ ${a}❏ ${prefix}sound7${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Nama Video Nya Apa kak?\nKalo Gak Tau Ketik :\n${prefix}listvideo`)
+					if (args.length < 1) return reply(`Name Video?\nif nyou dont know then type :\n${prefix}listvideo`)
 					getvi = body.slice(10)
 					buffer = fs.readFileSync(`./media/video/${getvi}.mp4`)
 					rmln.sendMessage(from, buffer, video, { mimetype: 'video/mp4', quoted: Lan })
@@ -3465,15 +3450,15 @@ ${a}❏ ${prefix}sound7${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (!isQuotedAudio) return reply('Reply Vn Nya Kak')
+					if (!isQuotedAudio) return reply('Reply Vn')
 					advn = body.slice(7)
-					if (!advn) return reply('Nama vn nya apa?')
+					if (!advn) return reply('Name vn?')
 					boij = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await rmln.downloadMediaMessage(boij)
 					audioya.push(`${advn}`)
 					fs.writeFileSync(`./media/audio/${advn}.mp3`, delb)
 					fs.writeFileSync('./media/audio.json', JSON.stringify(audioya))
-					rmln.sendMessage(from, `Vn Berhasil Ditambahkan Ke Database Bot`, MessageType.text, { quoted: Lan })
+					rmln.sendMessage(from, `Vn Added in Bot Database`, MessageType.text, { quoted: Lan })
 					break
 
 				case 'getvn':
@@ -3481,7 +3466,7 @@ ${a}❏ ${prefix}sound7${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Nama Vn Nya Apa kak?\nKalo Gak Tau Ketik :\n${prefix}listvn`)
+					if (args.length < 1) return reply(`Name Vn?\nif you dont know then type :\n${prefix}listvn`)
 					namastc = body.slice(7)
 					buffer = fs.readFileSync(`./media/audio/${namastc}.mp3`)
 					rmln.sendMessage(from, buffer, audio, { mimetype: 'audio/mp4', quoted: Lan, ptt: true })
@@ -3503,15 +3488,15 @@ ${a}❏ ${prefix}sound7${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (!isQuotedImage) return reply('Reply Gambar Nya Kak')
+					if (!isQuotedImage) return reply('Reply image')
 					sepimg = body.slice(10)
-					if (!sepimg) return reply('Nama Gambar Nya Apa?')
+					if (!sepimg) return reply('Name image?')
 					svimeg = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					imej = await rmln.downloadMediaMessage(svimeg)
 					imegya.push(`${sepimg}`)
 					fs.writeFileSync(`./media/image/${sepimg}.jpeg`, imej)
 					fs.writeFileSync('./media/image.json', JSON.stringify(imegya))
-					rmln.sendMessage(from, `Gambar Berhasil Ditambahkan Ke Database Bot`, MessageType.text, { quoted: Lan })
+					rmln.sendMessage(from, `Image added in Bot Database`, MessageType.text, { quoted: Lan })
 					break
 
 				case 'getimage':
@@ -3519,7 +3504,7 @@ ${a}❏ ${prefix}sound7${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (args.length < 1) return reply(`Nama Gambar Nya Apa kak?\nKalo Gak Tau Ketik :\n${prefix}listimage`)
+					if (args.length < 1) return reply(`Name image?\nif you dont know then type :\n${prefix}listimage`)
 					namastc = body.slice(10)
 					buffer = fs.readFileSync(`./media/image/${namastc}.jpeg`)
 					rmln.sendMessage(from, buffer, image, { quoted: Lan })
@@ -3751,7 +3736,7 @@ ${a}❏ cekprefix${a}
 					break				
                 case 'setthumb':
                 if (!isOwner) return reply(nad.ownerb())
-                    if (!isQuotedImage) return reply('Reply imagenya blokk!')
+                    if (!isQuotedImage) return reply('Reply image is block!')
                     const messimagethumb = JSON.parse(JSON.stringify(Lan).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
                     const downiamgethumb = await rmln.downloadMediaMessage(messimagethumb)
                     fs.unlinkSync(`./src/image/thumbnail.jpeg`)
@@ -3761,7 +3746,7 @@ ${a}❏ cekprefix${a}
                     break
 				case 'setppbot':
 				rmln.updatePresence(from, Presence.composing)
-				if (!isQuotedImage) return reply(`Kirim gambar dengan caption ${prefix}setbotpp atau tag gambar yang sudah dikirim`)
+				if (!isQuotedImage) return reply(`Send image with caption ${prefix}setbotpp or tag already send image`)
 					if (!isOwner) return reply(nad.ownerb())
 					enmedia = JSON.parse(JSON.stringify(Lan).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await rmln.downloadAndSaveMediaMessage(enmedia)
@@ -3830,7 +3815,7 @@ ${a}❏ cekprefix${a}
                     const bw = body.slice(12)
                     bad.push(bw)
                     fs.writeFileSync('./database/bad.json', JSON.stringify(bad))
-                    reply('Success Menambahkan Bad Word!')
+                    reply('Successfully Add Bad Word!')
                     break
                 case 'delbadword':
 					if (!isOwner) return reply(nad.ownerb())
@@ -3838,7 +3823,7 @@ ${a}❏ cekprefix${a}
                     let dbw = body.slice(12)
                     bad.splice(dbw)
                     fs.writeFileSync('./database/bad.json', JSON.stringify(bad))
-                    reply('Success Menghapus BAD WORD!')
+                    reply('Successfully del BAD WORD!')
                     break 
                 case 'listbadword':
                 case 'badwordlist':
@@ -3866,7 +3851,7 @@ ${a}❏ cekprefix${a}
 						for (let _ of anu) {
 							sendMess(_.jid, `*「 ${botName} BROADCAST 」*\n\n${body.slice(4)}`)
 						}
-						reply('*「 SUKSES BOSKU 」*')
+						reply('*「 SUKSES BOSS 」*')
 					}
 					break
 
@@ -3918,14 +3903,14 @@ ${a}❏ cekprefix${a}
 					if (!isOwner) return reply(nad.ownerb())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isEventon) return reply('*FITUR EVENT SUDAH AKTIF BOS*')
+						if (isEventon) return reply('*bOSS ALREADY ACTIVE EVENT FEATURE*')
 						event.push(from)
 						fs.writeFileSync('./database/event.json', JSON.stringify(event))
-						reply('*「 SUKSES 」MENGAKTIFKAN EVENT DI GROUP*')
+						reply('*「 SUCCESS 」ACTIVATE EVENT IN GROUP*')
 					} else if (Number(args[0]) === 0) {
 						event.splice(from, 1)
 						fs.writeFileSync('./database/event.json', JSON.stringify(event))
-						reply('*「 SUKSES 」MEMATIKAN EVENT DI GROUP*')
+						reply('*「 SUCCESS 」DEACTIAVTE EVENT IN GROUP*')
 					} else {
 						reply('pilih 1/0')
 					}
@@ -3971,8 +3956,8 @@ ${a}❏ cekprefix${a}
 								ppadd = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 							}
 							captnya = `╭──「 *VERIFIKASI BERHASIL* 」
-${a}➸ Nama : ${pushname}${a}
-${a}➸ Nomor : wa.me/${sender.split("@")[0]}${a}
+${a}➸ NamE : ${pushname}${a}
+${a}➸ Number : wa.me/${sender.split("@")[0]}${a}
 ${a}➸ Waktu Verify : ${time}${a}
 ${a}➸ SN : ${serialUser}${a}
 ${a}➸ User Verified : ${_registered.length}${a}
@@ -4000,8 +3985,8 @@ ${a}➸ User Verified : ${_registered.length}${a}
 								ppadd = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 							}
 							captnya = `╭──「 *VERIFIKASI BERHASIL* 」
-${a}➸ Nama : ${pushname}${a}
-${a}➸ Nomor : wa.me/${sender.split("@")[0]}${a}
+${a}➸ Name : ${pushname}${a}
+${a}➸ Numberr : wa.me/${sender.split("@")[0]}${a}
 ${a}➸ Waktu Verify : ${time}${a}
 ${a}➸ SN : ${serialUser}${a}
 ${a}➸ User Verified : ${_registered.length}${a}
@@ -4034,10 +4019,10 @@ ${a}➸ User Verified : ${_registered.length}${a}
 				reply(`Ya, Ada Yang Bisa Saya Bantu? Kalo Bingung Ketik ${prefix}menu Ya Kak`)
 			}
 			if (budy == 'bot') {
-				reply(`Ya, Emang Gue BOT🗿\nApa? Gak Seneng?\nBewan Pantek😡`)
+				reply(`Yes, i am BOT🗿\nany problem?😡`)
 			}
 			if (budy == 'Bot') {
-				reply(`Ya, Emang Gue BOT🗿\nApa? Gak Seneng?\nBewan Pantek😡`)
+				reply(`Yes, i am BOT🗿\nAny problem?😡`)
 			}
 			if (budy == 'assalamualaikum') {
 				reply(`Waalaikumsalam, Ada Yang Bisa Saya Bantu? kalo Bingung Ketik ${prefix}menu Ya Kak`)
@@ -4046,25 +4031,25 @@ ${a}➸ User Verified : ${_registered.length}${a}
 				reply(`Waalaikumsalam, Ada Yang Bisa Saya Bantu? kalo Bingung Ketik ${prefix}menu Ya Kak`)
 			}
 			if (budy == 'Terimakasih') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'terimakasih') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'makasih') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'Thanks') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'thanks') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'Tq') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 			if (budy == 'tq') {
-				reply(`Sama sama, Semoga Harimu Menyenangkan :)`)
+				reply(`You are welcome, Have a nice day :)`)
 			}
 
 			if (isGroup && !isCmd && budy != undefined) {
