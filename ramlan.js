@@ -1496,7 +1496,7 @@ ${a}❏ ${prefix}joox${a}
 					if (isBanned) return reply(nad.baned())
 					if (!isRegistered) return reply(nad.noregis())
 					if (!isPrem) return reply(nad.premium(prefix))
-					if (args.length < 1) return reply('Send link)
+					if (args.length < 1) return reply('Send link')
 					if (!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Link is invalid')
 					anu = await fetchJson(`https://api.xteam.xyz/dl/ytmp4?url=${q}&APIKEY=${xteam}`)
 					reply(nad.wait())
