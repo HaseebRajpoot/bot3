@@ -56,7 +56,7 @@ memberlimit = "0" // MEMBER LIMIT GROUP
 cr = "*HASEEB BOT VERIFIED*" // FAKE REPLY
 const ownerNumber = "923057110112@s.whatsapp.net" // NOMOR OWNER
 const vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:4.0\n'
+            + 'VERSION:3.0\n'
             + 'FN:Mr-Haseeb\n' // NAMA OWNER
             + 'ORG:HASEEB BOT;\n' // NAMA BOT
             + 'TEL;type=CELL;type=VOICE;waid=923057110112:+92 305-7110-112\n' // NOMOR OWNER
@@ -3974,10 +3974,10 @@ ${a}➸ User Verified : ${_registered.length}${a}
 							} catch {
 								ppadd = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 							}
-							captnya = `╭──「 *VERIFIKASI BERHASIL* 」
+							captnya = `╭──「 *SUCCESSFUL VERIFICATION* 」
 ${a}➸ Name : ${pushname}${a}
 ${a}➸ Numberr : wa.me/${sender.split("@")[0]}${a}
-${a}➸ Waktu Verify : ${time}${a}
+${a}➸ Time Verify : ${time}${a}
 ${a}➸ SN : ${serialUser}${a}
 ${a}➸ User Verified : ${_registered.length}${a}
 ╰─────「 *${botName}* 」`
