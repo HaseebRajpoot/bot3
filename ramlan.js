@@ -270,10 +270,10 @@ async function starts() {
 	})
 	fs.existsSync('./MrR4M.json') && rmln.loadAuthInfo('./MrR4M.json')
 	rmln.on('connecting', () => {
-		start('2', 'Sedang Masuk...')
+		start('2', 'Connecting...')
 	})
 	rmln.on('open', () => {
-		success('2', 'Berhasil Masuk')
+		success('2', 'Connected')
 	})
 	await rmln.connect({ timeoutMs: 30 * 1000 })
 
@@ -655,14 +655,8 @@ ${a}Your services will bury me deep inside${a}`
 					const reqXp = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 					const uangku = checkATMuser(sender)
 					const lvl = getLevelingLevel(sender)
-					const ramadhan = await axios.get('https://xinzbot-api.herokuapp.com/api/hitungmundur?apikey=XinzBot&tanggal=12&bulan=4')
-					const ucapan = await axios.get('https://xinzbot-api.herokuapp.com/api/ucapan?apikey=XinzBot&timeZone=Asia/Jakarta')
 					gmenu = await getBuffer(me.imgUrl)
 					const menunya = `━━ 「 *BOT WHATSAPP* 」 ━━
-${a}${ucapan.data.result}${a}
-
-Hitung mundur Ramadhan
-${ramadhan.data.result}
 
 *INFO USER BOT*
 ${a}❏ Nama : ${pushname}${a}
@@ -708,7 +702,7 @@ ${a}❏ ${prefix}info${a}
 				case 'owner':
 				case 'creator':
 					rmln.sendMessage(from, { displayname: "Jeff", vcard: vcard }, MessageType.contact, { quoted: Lan })
-					rmln.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v', MessageType.text, { quoted: Lan })
+					rmln.sendMessage(from, 'Thats my Boyfriend number >_<, Ehh my owner number same', MessageType.text, { quoted: Lan })
 					break
 
 				case 'donasi':
@@ -863,7 +857,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teksnya mana kak? Contoh : ${prefix}nuliskiri Ramlan baik hati`)
+					if (!q) return reply(`Text Missing? Example : ${prefix}nuliskiri Haseeb is Kind`)
 					reply('「❗」WAIT BRO')
 					kir = await getBuffer(`https://api.xteam.xyz/magernulis2?text=${q}&APIKEY=${xteam}`)
 					rmln.sendMessage(from, kir, image, { quoted: Lan, caption: 'Nihh kak' })
@@ -873,7 +867,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Teksnya mana kak? Contoh : ${prefix}nuliskanan Ramlan baik hati`)
+					if (!q) return reply(`Text Missing? Example : ${prefix}nuliskanan Haseeb is Kind`)
 					reply('「❗」WAIT BRO')
 					kan = await getBuffer(`https://api.xteam.xyz/magernulis3?text=${q}&APIKEY=${xteam}`)
 					rmln.sendMessage(from, kan, image, { quoted: Lan, caption: 'Nihh kak' })
@@ -883,7 +877,7 @@ ${a}❏ ${prefix}bikinquote${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Masukan username!\nContoh :\n${prefix}stalkig iamramlan_`)
+					if (!q) return reply(`Enter username!\nExample :\n${prefix}stalkig iamHaseeb_`)
 					anu = await fetchJson(`https://api.xteam.xyz/dl/igstalk?nama=${q}&APIKEY=${xteam}`)
 					reply('「❗」Patient again Stalking IG her brother')
 					stig = await getBuffer(anu.result.user.hd_profile_pic_url_info.url)
@@ -1034,13 +1028,13 @@ ${a}❏ ${prefix}mining${a}
 					if (!isBotGroupAdmins) return reply(nad.badmin())
 					if (args.length < 1) return reply(`to activate type : ${prefix}antilink 1`)
 					if (Number(args[0]) === 1) {
-						if (isBadWord) return reply('Sudah Aktif Kak')
+						if (isBadWord) return reply('Already active')
 						badword.push(from)
 						fs.writeFileSync('./database/badword.json', JSON.stringify(badword))
 						reply('「 SUCCESS 」Anti Badword feature Enabled')
 						rmln.sendMessage(from, `ALLERT!!! Group hase been installed anti Badword\nif you break then i will kick you`, text)
 					} else if (Number(args[0]) === 0) {
-						if (!isBadWord) return reply('Sudah Mati Kak')
+						if (!isBadWord) return reply('Feature deactive')
 						var ini = antilink.indexOf(from)
 						badword.splice(ini, 1)
 						fs.writeFileSync('./database/badword.json', JSON.stringify(badword))
@@ -1103,7 +1097,7 @@ ${a}❏ ${prefix}mining${a}
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('「 SUCCESS 」Feature Anti Link Activate')
-						rmln.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+						rmln.sendMessage(from, `ALLERT!!! Group has been installed anti link\nIf you break i will kick you`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isAntiLink) return reply('Its dead')
 						var ini = antilink.indexOf(from)
@@ -1124,10 +1118,10 @@ ${a}❏ ${prefix}mining${a}
 					if (!isBotGroupAdmins) return reply(nad.badmin())
 					if (args.length < 1) return reply(`Open : ${prefix}group open\nTo close : ${prefix}group close`)
 					if (args[0] === 'open') {
-						reply(`Berhasil Membuka group`)
+						reply(`Group opend by Admin`)
 						rmln.groupSettingChange(from, GroupSettingChange.messageSend, false)
 					} else if (args[0] === 'close') {
-						reply(`Berhasil Menutup Group`)
+						reply(`Group Close by Admin`)
 						rmln.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break
@@ -2170,7 +2164,7 @@ ${a}❏ ${prefix}sertiml${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					if (!q) return reply(`Text missing?\nContoh :\n${prefix}sertiharam botwea`)
+					if (!q) return reply(`Text missing?\nExample :\n${prefix}sertiharam botwea`)
                     reply(nad.wait())
                     menghayu = await getBuffer(`http://onlydevcity.xyz/AnakHaramSerti/img.php?nama=${q}`)
                     rmln.sendMessage(from, menghayu, image, { quoted: Lan })
@@ -3751,7 +3745,7 @@ ${a}❏ cekprefix${a}
 					enmedia = JSON.parse(JSON.stringify(Lan).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await rmln.downloadAndSaveMediaMessage(enmedia)
 					await rmln.updateProfilePicture(botNumber, media)
-					reply('Makasih profil barunya😗')
+					reply('Profile picture change successfully😗')
 					break
                  case 'readall':
 					if (!isOwner) return reply(nad.ownerb())
@@ -3768,7 +3762,7 @@ ${a}❏ cekprefix${a}
 					adprem = `${args[0].replace('@', '')}@s.whatsapp.net`
 					premium.push(adprem)
 					fs.writeFileSync('./database/premium.json', JSON.stringify(premium))
-					fakestatus(`BERHASIL MENAMBAHKAN USER PREMIUM`)
+					fakestatus(`SUCCESSFULLY ADDED USER PREMIUM`)
 					break
 
 				case 'dellprem':
@@ -3777,7 +3771,7 @@ ${a}❏ cekprefix${a}
 					delp = ban.indexOf(delprem)
 					premium.splice(delp, 1)
 					fs.writeFileSync('./database/premium.json', JSON.stringify(premium))
-					fakestatus(`BERHASIL MENGHAPUS USER PREMIUM`)
+					fakestatus(`SUCCESSFULLY REMOVED USER PREMIUM`)
 					break
 					
                 case 'premiumlist':
@@ -3851,7 +3845,7 @@ ${a}❏ cekprefix${a}
 						for (let _ of anu) {
 							sendMess(_.jid, `*「 ${botName} BROADCAST 」*\n\n${body.slice(4)}`)
 						}
-						reply('*「 SUKSES BOSS 」*')
+						reply('*「 SUCCESS BOSS 」*')
 					}
 					break
 
@@ -3955,10 +3949,10 @@ ${a}❏ cekprefix${a}
 							} catch {
 								ppadd = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 							}
-							captnya = `╭──「 *VERIFIKASI BERHASIL* 」
+							captnya = `╭──「 *SUCCESSFUL VERIFICATION* 」
 ${a}➸ NamE : ${pushname}${a}
 ${a}➸ Number : wa.me/${sender.split("@")[0]}${a}
-${a}➸ Waktu Verify : ${time}${a}
+${a}➸ Time Verify : ${time}${a}
 ${a}➸ SN : ${serialUser}${a}
 ${a}➸ User Verified : ${_registered.length}${a}
 ╰─────「 *${botName}* 」`
@@ -4041,6 +4035,9 @@ ${a}➸ User Verified : ${_registered.length}${a}
 			}
 			if (budy == 'Thanks') {
 				reply(`You are welcome, Have a nice day :)`)
+			}
+			if (budy == 'How are you') {
+				reply(`I am fine, How are you :)`)
 			}
 			if (budy == 'thanks') {
 				reply(`You are welcome, Have a nice day :)`)
