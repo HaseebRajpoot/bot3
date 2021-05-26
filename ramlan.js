@@ -291,17 +291,13 @@ async function starts() {
 				}
 				teks = `*WELCOME IN OUR GROUP ${mdata.subject}*
 ___________________________
-${a}@${num.split('@')[0]} Intro/Dikick!${a}
+${a}@${num.split('@')[0]} Hi, How are you Please introduce your self!${a}
 ${a}➸ Name :${a}
 ${a}➸ Umer :${a}
-${a}➸ Askot :${a}
 ${a}➸ Gender :${a}
-${a}➸ School Name :${a}
-${a}➸ Already have Doi/Blm :${a}
-${a}➸ Pap Muka dumlu!${a}
-𝗦𝗮𝘃𝗲 𝗡𝗼𝗺𝗼𝗿 𝗔𝗱𝗺𝗶𝗻
+Save Admin Number
 ___________________________
-${a}Please read our group role!${a}`
+${a}Please read our group role.If you break we will kick you from our group!${a}`
 				let buffer = await getBuffer(ppimg)
 				rmln.sendMessage(mdata.id, buffer, MessageType.image, { caption: teks, contextInfo: { "mentionedJid": [num] } })
 			} else if (anu.action == 'remove') {
@@ -2563,7 +2559,7 @@ ${a}❏ ${prefix}seberapagay${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					const trut = ['Pernah suka sama siapa aja? berapa lama?', 'Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)', 'apa ketakutan terbesar kamu?', 'pernah suka sama orang dan merasa orang itu suka sama kamu juga?', 'Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?', 'pernah gak nyuri uang nyokap atau bokap? Alesanya?', 'hal yang bikin seneng pas lu lagi sedih apa', 'pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?', 'pernah jadi selingkuhan orang?', 'hal yang paling ditakutin', 'siapa orang yang paling berpengaruh kepada kehidupanmu', 'hal membanggakan apa yang kamu dapatkan di tahun ini', 'siapa orang yang bisa membuatmu sange', 'siapa orang yang pernah buatmu sange', '(bgi yg muslim) pernah ga solat seharian?', 'Siapa yang paling mendekati tipe pasangan idealmu di sini', 'suka mabar(main bareng)sama siapa?', 'pernah nolak orang? alasannya kenapa?', 'Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget', 'pencapaian yang udah didapet apa aja ditahun ini?', 'kebiasaan terburuk lo pas di sekolah apa?']
+					const trut = [ "If possible or if you want, in gc/outside gc who will you be friends with?", "What is your biggest fear?", "Ever like the same person and feel that person likes you too?", "What is the name of your friend ex-girlfriend that you once liked secretly?", "Have you ever stolen your mother or father money? tell us Reason?", "Whats makes you happy when you are sad", "Ever unrequited love? if ever with who?", "Ever been an affair with someone?", "The most feared thing", "Who is the person who has the most influence on your life?", "Proud thing what you got this year", "who is the person who can you make feel uncomfortable", "who is the person who ever made you uncomfortable", "(for muslim) have never prayed all day long?", "who is the closest to your ideal partner?", "who like to play together?", "Have you ever refused someone? the reason why?", "Mention  events that make you hurt  that you still remember", "what achievements you got this year?", "What was your wrost habit at school? "]
 					const ttrth = trut[Math.floor(Math.random() * trut.length)]
 					truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					rmln.sendMessage(from, truteh, image, { caption: '*Truth*\n\n' + ttrth, quoted: Lan })
@@ -2574,7 +2570,7 @@ ${a}❏ ${prefix}seberapagay${a}
 					if (!isRegistered) return reply(nad.noregis())
 					if (isLimit(sender)) return reply(nad.limitend(pusname, prefix))
 					await limitAdd(sender)
-					const dare = ['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu', 'telfon crush/pacar sekarang dan ss ke pemain', 'pap ke salah satu anggota grup', 'Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo', 'ss recent call whatsapp', 'drop emot 🤥 setiap ngetik di gc/pc selama 1 hari', 'kirim voice note bilang can i call u baby?', 'drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu', 'pake foto sule sampe 3 hari', 'ketik pake bahasa daerah 24 jam', 'ganti nama menjadi "gue anak lucinta luna" selama 5 jam', 'chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you', 'prank chat mantan dan bilang " i love u, pgn balikan', 'record voice baca surah al-kautsar', 'bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini', 'sebutkan tipe pacar mu!', 'snap/post foto pacar/crush', 'teriak gajelas lalu kirim pake vn kesini', 'pap mukamu lalu kirim ke salah satu temanmu', 'kirim fotomu dengan caption, aku anak pungut', 'teriak pake kata kasar sambil vn trus kirim kesini', 'teriak " anjimm gabutt anjimmm " di depan rumah mu', 'ganti nama jadi " BOWO " selama 24 jam', 'Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+					const dare = ["Phone crush/tell girlfriend now and post here ss", "Pap to a memeber of the group", "Send a message to your friend and say 'i am so beautiful' and send his response here (Min 2 friends)", "ss recent call whatsapp", "drop emote '🥺👉👌' on every gc/pc chat for 1 day", "Send a voice note say can i call u baby?", "drop the song/quote/status, then tag member of this group", "Send a list of your future babies name", "Type your top 10 gf bf name", "Change the name to 'i am  a cute child, and put in ss on status for 1 day", "Call to your sim helpline and flirt then send voice masg to here'", "Call to you ex- and say ' i love u, i am back'", "record voice read surah al-kautsar(Muslimns)", "Send a message to your partneer and say my ex is back Drop here ss with response", "type your partneer name", "One more month to married (put status)", "Ask your dare to group member", "Pap on your face then send it to one of your friend", "Send your photo and type i am adopted child", "Put status i am going to dubia next week", "Ask your dare to group member", "Change name to BOWO", "Put a status i am mental "]
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					rmln.sendMessage(from, tod, image, { quoted: Lan, caption: '*Dare*\n\n' + der })
