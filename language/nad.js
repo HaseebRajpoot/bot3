@@ -1,9 +1,9 @@
 exports.wait = () => {
-	return`*「❗」WAIT KAK*`
+	return`*「❗」PLEASE WAIT*`
 }
 
 exports.succes = () => {
-	return`*「 SUKSES 」*`
+	return`*「 SUCCESS 」*`
 }
 
 exports.lvlon = () => {
@@ -15,7 +15,7 @@ exports.lvloff = () => {
 }
 
 exports.lvlnul = () => {
-	return`*「❗」LEVELMU MASIH KOSONG*`
+	return`*「❗」YOUR LEVEL IS STILL EMPTY*`
 }
 
 exports.lvlnoon = () => {
@@ -23,30 +23,30 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「❗」BELUM VERIFIKASI「❗」*\n\nketik : @verify`
+	return`*「❗」NOT VERIFICATION YET「❗」*\n\nTYPE : @verify`
 }
 
 exports.baned = () => {
-	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
+	return`*「❗」SORRY SORRY BRO, YOU ARE ALREADY BANNED*`
 }
 
 exports.premium = (prefix) => {
-	return`Lu Siapa? Fitur ini khusus user premium!
-Upgrade ke premium dulu bosku
-Jika minat hubungi owner ku
-Ketik : ${prefix}owner`
+	return`This feature is for premium user!
+if you want to premium user
+talk to my owner
+Type : ${prefix}owner`
 }
 
 exports.rediregis = () => {
-	return`*Kamu sudah melakukan verify -_-*`
+	return`*You have already verified -_-*`
 }
 
 exports.stikga = () => {
-	return`*「 GAGAL 」Coba reply/tag ulang kak*`
+	return`*「 FAILED 」Tyring reply/tag *`
 }
 
 exports.linkga = () => {
-	return`*「❗」maaf linknya tidak valid kak*`
+	return`*「❗」Sorry the link is invalid*`
 }
 
 exports.groupo = () => {
@@ -66,64 +66,64 @@ exports.admin = () => {
 }
 
 exports.badmin = () => {
-	return`*「❗」BOT HARUS JADI ADMIN*`
+	return`*「❗」BOT MUST BE  ADMIN*`
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi*`
+	return`*Problem have been reported to bot owner*`
 }
 
 exports.wrongf = () => {
-	return`*「🗿」Teks nya mana kak?*`
+	return`*「🗿」Where is the text?*`
 }
 
 exports.clears = () => {
-	return`*Sukses bosku*`
+	return`*All chat clear Boss*`
 }
 
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
 *「 SELAMAT 」*
-\`\`\`➸ *Nama* : ${pushname}\`\`\`
-\`\`\`➸ *Nomor* : wa.me/${sender.split("@")[0]}\`\`\`
+\`\`\`➸ *Name* : ${pushname}\`\`\`
+\`\`\`➸ *Nomber* : wa.me/${sender.split("@")[0]}\`\`\`
 \`\`\`➸ *Xp* : ${getLevelingXp(sender)}\`\`\`
 \`\`\`➸ *Level* : ${getLevel} ➸ ${getLevelingLevel(sender)}\`\`\`
 `}
  
 exports.limitend = (pushname, prefix) => {
-	return`*maaf ${pushname} limit hari ini habis*
-*Limit di reset setiap jam 24:00*
+	return`*Sorry ${pushname} limit today expired*
+*Limit is reset every 24:00 hours*
 
-\`\`\`Upgrade Premium Bebas Limit\`\`\`
-\`\`\`➸ 20K : 1 Bulan\`\`\`
-\`\`\`Jika berminat silahkan hubungi owner\`\`\`
-\`\`\`Kirim perintah : ${prefix}owner\`\`\`
+\`\`\`Upgrade Premium Free Limit\`\`\`
+\`\`\`➸ 20K : 1 Month\`\`\`
+\`\`\`If interested, please contect the owner\`\`\`
+\`\`\`Type : ${prefix}owner\`\`\`
 `
 }
 
 exports.limitcount = (isPrem, limitCounts) => {
 	return`
 *「 LIMIT COUNT 」*
-sisa limit anda : ${isPrem ? '9999' : `${limitCounts}`}
+Your Remaining Limit : ${isPrem ? '9999' : `${limitCounts}`}
 
-Upgrade premium bosku, biar bebas gunain bot`
+My Boss premium upgrade,so its free to use bots`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
 	return`┏━━━━━━━♡ *ATM* ♡━━━━━━━┓
 ┃╭───────────────────
-┃│➸ NAMA : ${pushname}
-┃│➸ NOMOR : ${sender.split("@")[0]}
+┃│➸ NAME : ${pushname}
+┃│➸ NUMBER : ${sender.split("@")[0]}
 ┃│➸ UANG : ${uangkau}
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛`
 }
 
 exports.donasi = () => {
-return`*DONASI KAK*
-Pulsa : 0812-1444-1027
-Gopay : 0855-5924-0360
-Dana : 0855-5924-0360
+return`*DONATION*
+Pulsa : 0305-7110-112
+Gopay : 0305-7110-112
+Dana : 0305-7110-112
 Saweria : https://saweria.co/ramlangans
 
 Donasi supaya bot terus update & Aktif`
