@@ -259,6 +259,7 @@ const sleep = async (ms) => {
 
 async function starts() {
 	const rmln = new WAConnection()
+	rmln.version = [2, 2119, 6]
 	rmln.logger.level = 'warn'
 	console.log(banner.string)
 	rmln.on('qr', () => {
